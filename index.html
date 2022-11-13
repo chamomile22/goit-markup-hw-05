@@ -34,7 +34,8 @@
                                 <use href="./img/icons.svg#mail"></use>
                             </svg>
                             info@devstudio.com
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="nav-contacts-element">
                         <a class="nav-contacts-link" href="tel:+380961111111">
                             <svg class="contacts-icon" width="10" height="16">
@@ -53,7 +54,7 @@
         <section class="hero">
             <div class="hero-container container">
                 <h1 class="hero-heading">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -107,9 +108,18 @@
             <div class="container">
                 <h2 class="work-heading">Чим ми займаємося</h2>
                 <ul class="work-list">
-                    <li class="work-element"><img src="./img/webstudio-img-1.jpg" alt="typing" width="370" height="294"></li>
-                    <li class="work-element"><img src="./img/webstudio-img-2.jpg" alt="design" width="370" height="294"></li>
-                    <li class="work-element"><img src="./img/webstudio-img-3.jpg" alt="color-matching" width="370" height="294"></li>
+                    <li class="work-element">
+                        <img src="./img/webstudio-img-1.jpg" alt="typing" width="370" height="294">
+                        <p class="work-text">Десктопні додатки</p>
+                    </li>
+                    <li class="work-element">
+                        <img src="./img/webstudio-img-2.jpg" alt="design" width="370" height="294">
+                        <p class="work-text">Мобільні додатки</p>
+                    </li>
+                    <li class="work-element">
+                        <img src="./img/webstudio-img-3.jpg" alt="color-matching" width="370" height="294">
+                        <p class="work-text">Дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -371,5 +381,18 @@
             </div>
         </div>
     </footer>
+
+    <!--  Modal window  -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+                <svg class="modal-button-icon" width="11" height="11">
+                    <use href="./img/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
