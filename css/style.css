@@ -190,6 +190,9 @@ img{
 /*   Hero styles   */
 
 .hero{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -681,7 +684,7 @@ img{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-element:hover .overlay{
+.portfolio-link:hover .overlay{
     transform: translateY(0);
 
 }
